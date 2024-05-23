@@ -1,0 +1,22 @@
+<div class="box">
+    <div class="container-post">
+        <form action="/edit/<%= post.id %>" method="post">
+            <div> 
+                <h1 class="post-title"><%= post.title %></h1>
+                <input class="post-title display-none" name="title" value="<%= post.title %>" required>
+            </div>
+            <hr>
+            <div>
+                <textarea class="post-content" name="content" placeholder="<%= post.content %>" disabled required></textarea>
+            </div>
+            <hr>
+            <div class="container-post-options"> 
+                <p1 class="post-date"><%= post.id %></p1>
+                <div class="container-btn">
+                    <input class="btn-edit" type="submit" value="Edit" name="action">
+                    <input class="btn-delete" type="submit" value="Delete" name="action">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

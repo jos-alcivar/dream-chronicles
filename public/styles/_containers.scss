@@ -1,0 +1,97 @@
+.box {
+    height: 21rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 5px none black;
+    flex-shrink: 0;
+}
+
+.container-form, .container-post {
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.input-title, .post-title {
+    width: 100%;
+    height: 50px;
+    padding-block: 0;
+    padding-inline: 0;
+    border-style: none;
+    font-size: 2rem;
+    font-family: var(--font-family-primary);
+    font-weight: bold;
+}
+
+.post-title {
+    margin: 0;
+}
+
+.input-content, .post-content {
+    width: 100%;
+    height: 200px;
+    padding-block: 0;
+    padding-inline: 0;
+    text-indent: 0.15rem;
+    border-style: none;
+    font-size: 1rem;
+    font-family: var(--font-family-secondary);
+    text-align: justify;
+    resize: none;
+    color: var(--accent-color);
+}
+
+.post-date {
+    font-size: 0.75rem;
+    font-family: var(--font-family-secondary);
+    text-align: left;
+    color: rgb(118, 118, 118);
+}
+
+.container-btn {
+    align-self: flex-end;
+}
+
+.container-post-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-post, .btn-edit {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    width: 5rem;
+    border: 0px none;
+    border-radius: 3px;
+    height: 1.5rem;
+}
+
+.btn-save {
+    background-color: red;
+}
+
+.btn-delete {
+    background-color: rgb(118, 118, 118);
+    color: var(--primary-color);
+    width: 5rem;
+    border: 0px none;
+    border-radius: 3px;
+    height: 1.5rem;
+}
+
+.display-none {
+    visibility:hidden;
+    display: none;
+}
+
+input:focus {
+    outline-color: var(--shadow-color);
+}
+
+input[type='text'] {
+    color:var(--accent-color);
+    text-indent: 0.15rem;
+  }
+

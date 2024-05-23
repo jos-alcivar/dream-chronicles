@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs") %>
+<body class="background">
+    <header class="header">
+        <div class="headerContainer">
+            <div class="inner">
+                <div class="site-branding">
+                    <div>Dream Chronicles</div>
+                </div>
+            </div>
+    </header>
+    <div class="content">
+        <div class="d-flex justify-content-around content-container">
+            <div class="d-flex main-row-bg">
+                <div class="box">
+                    <form class="container-form" action="/create" method="post">
+                        <div> 
+                            <input class="input-title" type="text" name="title" placeholder="Title" required>
+                        </div>
+                        <hr>
+                        <div>
+                            <textarea rows = "1" cols = "1" class="input-content" name="content" placeholder="Share your dream ☁️" required></textarea>
+                        </div>
+                        <hr>
+                        <div class="container-btn">
+                            <input class="btn-post" type="submit" value="Post">
+                        </div>
+                    </form>
+                </div>
+                <% posts.forEach(post => { %>
+                    <%- include('partials/posts', { post: post }) %>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer.ejs') %>
